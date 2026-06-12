@@ -41,9 +41,7 @@ const startServer = async () => {
         app.use(cors({
             origin: [
                 'http://localhost:5173',
-                'https://paytm-olive-three.vercel.app',
-                'https://paytm-git-main-skizzy-creates-projects.vercel.app',
-                'https://paytm-skizzy-creates-projects.vercel.app'
+                'https://pay-wave-wallet.vercel.app'
             ],
             credentials: true
         }));
