@@ -6,7 +6,7 @@ export const Appbar = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('http://localhost:3000/api/v1/user/logout', {}, {
+            await axios.post('https://paywave-wallet.onrender.com/api/v1/user/logout', {}, {
                 withCredentials: true
             });
         } catch (error) {

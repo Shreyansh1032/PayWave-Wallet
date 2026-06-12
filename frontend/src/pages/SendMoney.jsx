@@ -41,7 +41,7 @@ export const SendMoney = () => {
                             </div>
                             <button
                                 onClick={async (e) => {
-                                    const response = await axios.post('http://localhost:3000/api/v1/account/transfer', {
+                                    const response = await axios.post('https://paywave-wallet.onrender.com/api/v1/account/transfer', {
                                         to: id,
                                         amount: parseInt(amount, 10) // Convert amount to number
                                     }, {

@@ -10,7 +10,7 @@ export const Users = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/v1/user/bulk?filter=' + filter);
+                const response = await axios.get('https://paywave-wallet.onrender.com/api/v1/user/bulk?filter=' + filter);
                 console.log('Users:', response.data.user);
                 setUsers(response.data.user);
             } catch (error) {
